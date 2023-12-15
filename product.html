@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Level Dropdown Menu</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./product-styles.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="content">
+          <div class="navbar">
+            <img
+              src="https://vdelta.com.vn/wp-content/uploads/2023/08/c81592bd102ec2709b3f-1.jpg"
+              alt=""
+            />
+            <ul class="menu">
+              <li><a href="#!">HOME NEW</a></li>
+              <li>
+                <a href="#!"
+                  >PRODUCT <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div class="sub-menu">
+                  <div class="banner-menu">
+                    <div>
+                      <div class="flex-colunm">
+                        <div class="textBanner">SHOP CATALOG</div>
+                        <span>Shop-achive</span>
+                      </div>
+                      <div class="flex-colunm" style="margin-top: 35px">
+                        <div class="textBanner">SHOP CATALOG</div>
+                        <span>Shop page</span><br />
+                        <span>Cart</span>
+                        <span>Check out</span><br />
+                        <span>My account</span>
+                        <span>Order tracking</span>
+                      </div>
+                    </div>
+                    <div style="margin-left: 90px">
+                      <div class="flex-colunm">
+                        <div class="textBanner">SHOP CATALOG</div>
+                        <span>Shop page</span><br />
+                        <span>Cart</span>
+                        <span>Check out</span><br />
+                        <span>My account</span>
+                        <span>Order tracking</span>
+                      </div>
+                    </div>
+                    <div class="img-backgound">
+                      <img src="./Asset/8sa1lgtw.png" alt="backgroundfish" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#!">NEWS <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#!" style="color: black">Event 1</a></li>
+                  <li><a href="#!" style="color: black">Event 2</a></li>
+                  <li><a href="#!" style="color: black">Event 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">
+                  NEW INFORMATION <i class="fa-solid fa-chevron-down"></i>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="!#" style="color: black">New Information</a>
+                    </li>
+                    <li><a href="!#" style="color: black">Contact us</a></li>
+                    <li><a href="!#" style="color: black">FAQs</a></li>
+                  </ul>
+                </a>
+              </li>
+              <li><a href="#!">ABOUT US</a></li>
+              <li><a href="#!">ACTIVITIES</a></li>
+            </ul>
+            <div class="actions">
+              <ul class="site-tool">
+                <li class="cart">
+                  <a href=""><i class="fa-solid fa-cart-shopping"> 0 </i></a>
+                </li>
+                <li class="account">
+                  <a href=""><i class="fa-regular fa-circle-user"></i></a>
+                </li>
+                <li class="serch">
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- =========================container-product======================= -->
+      <div class="container-product">
+        <div class="content">
+          <div class="shop-header">
+            <h1 class="title-product">Product</h1>
+          </div>
+          <div class="list-product">
+            <h3>SEAFOOD</h3>
+            <h3>CANNED FOOD</h3>
+            <h3>COCONUT PRODUCTS</h3>
+            <h3>ECO - FRIENDLY HANDICRATS</h3>
+            <h3>FRESH FRUITS & VEGETABLES</h3>
+            <h3>HIGHT VALUES - GOODS</h3>
+            <h3>OTHER PRODUCTS</h3>
+            <h3>SPICES</h3>
+          </div>
+          <div class="filter-bredrem">
+            <span class="filter-product"
+              ><i class="fa-solid fa-bars"></i> FILTER</span
+            >
+            <a href="">Home /</a>
+            <a href="">Product</a>
+          </div>
+          <div class="list-item">
+            <script>
+              // Example data
+              const items = [
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 1", price: "$10" },
+                { title: "Item 2", price: "$15" },
+                { title: "Item 3", price: "$20" },
+              ];
+
+              // Loop through the items and generate HTML dynamically
+              for (let i = 0; i < items.length; i++) {
+                document.write(`
+                                  <div class="pro-item">
+                                      <div class="pro-item-img">
+                                          <img src="https://vdelta.com.vn/wp-content/uploads/2023/10/Screenshot-2023-10-03-160218.png" alt="">
+                                      </div>
+                                      <div style="padding: 10px;"> 
+                                          <div class="pro-content">
+                                              <div>${items[i].title}</div>
+                                              <i class="fa-regular fa-heart"></i>
+                                          </div>
+                                          <div class="pro-btn">
+                                              ${items[i].price}
+                                              <div class="pro-btn-read">
+                                                  READ MORE
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              `);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-col">
+            <div>
+              <h3>HEAD OFFICE:</h3>
+              <p>Viet D.E.L.T.A Industrial Co.Ltd.</p>
+              <p>
+                Address: 20/5 Dinh Bo Linh St., Ward 24, Binh Thanh Dist,
+                Hochiminh City, Vietnam
+              </p>
+              <p>Call: +84 028 3511 5601</p>
+              <p>Whatapps: +84364772308</p>
+              <p>Email: info@vdelta.com.vn</p>
+            </div>
+            <div>
+              <h3>NEWS</h3>
+              <ul>
+                <li>Is It Better To Use Dried Ginger Or Fresh Ginger?</li>
+                <li>
+                  Pure Vietnamese Agar Agar Powder – Cheap Price – Reputable –
+                  Best Quality
+                </li>
+                <li>
+                  “”Explore Diverse Flavors: Top 1 Great Jelly Types In
+                  Drinks!!”
+                </li>
+                <li>Rubber Band: 4 Surprising Benefits You Need To Know</li>
+              </ul>
+            </div>
+            <div>
+              <h3>CALENDAR</h3>
+              <div class="calendar">
+                <div id="datepicker"></div>
+              </div>
+            </div>
+            <div>
+              <h3>SEARCH</h3>
+              <div class="search-bar">
+                <input type="text" placeholder="Search..." />
+                <button type="submit">
+                  <img
+                    src="https://www.pinclipart.com/picdir/middle/485-4851736_free-clipart-icons.png"
+                    alt="Search Icon"
+                    style="height: 20px; width: 20px"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="footer-border">
+            <a href=""></a>
+          </div>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-skype"></i>
+          <i class="fa-brands fa-skype"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      <script>
+        $(function () {
+          $("#datepicker").datepicker();
+        });
+      </script>
+    </main>
+  </body>
+</html>
